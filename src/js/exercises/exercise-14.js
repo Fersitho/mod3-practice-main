@@ -13,6 +13,9 @@ Muestra un array que solo incluya la pelicula mejor valorada de cada uno de esto
 const filterFilmBestActor = (films, actors) => {
     let arrayFilmBestActor = [];
 
+
+    // Primer intento con un for
+
     // for (let i = 0; i < actors.length; i++) {
 
     //     let bestActorMovie = films
