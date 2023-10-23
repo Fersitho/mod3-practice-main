@@ -9,7 +9,7 @@ const numOfVowels = (text) => {
     const vowels = 'aeiouAEIOU';
     let totalVowels = 0;
     let textFormated = removeAccents(lowerCase(text))
-    console.log(textFormated)
+    
     for (let i = 0; i < textFormated.length; i++) {
         
         vowels.includes(textFormated.charAt(i)) ? totalVowels++ : null;
