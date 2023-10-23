@@ -18,10 +18,10 @@ function removeAccents(text) {
 }
 
 function revertText(text) {
-    let textRevert = text;
+    let textRevert = '';
 
-    for (let i = text.length - 1; i < 0; i++) {
-        textRevert += textRevert.charAt(i);
+    for (let i = text.length - 1; i >= 0; i--) {
+        textRevert += text.charAt(i);
     }
 
     return textRevert;
