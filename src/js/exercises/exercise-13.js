@@ -22,3 +22,26 @@ Agrupa en un array las peliculas por categorias:
     }
 ]
 */
+const arrayFilterFilmsCategories = (films) => {
+
+    let arrayFilmsByCategories = [
+        { Drama: [] },
+        { Action: [] },
+        { Crime: [] },
+        { Biography: [] },
+        { Adventure: [] },
+        { Comedy: [] }
+    ]
+    
+    for (let i = 0; i < arrayFilmsByCategories.length; i++) {
+        let categoryName = Object.keys(arrayFilmsByCategories[i])[0];
+        let filtradoFilms = films.filter(a => a.category == categoryName)
+        
+        arrayFilmsByCategories[i][categoryName] = filtradoFilms;
+    }
+    
+    return arrayFilmsByCategories;
+
+}
+
+showContent(13, arrayFilterFilmsCategories(movies));
