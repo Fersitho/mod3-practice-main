@@ -5,7 +5,7 @@
 //   script.setAttribute("src", `js/exercises/exercise-${i}.js`);
 //   document.body.appendChild(script);
 // }
-
+// se puede hacer anomima autollamada
 const addExercises = async () => {
   const numExercises = 20;
 

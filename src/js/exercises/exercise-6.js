@@ -14,7 +14,7 @@ const genNumRandom = (totalNumbers) => {
 
     const numMin = Math.min(...numRandom);
     const numMax = Math.max(...numRandom);
-
+    // lo retorno en objeto porque en texto queda todo muy seguido, me gusta mas asi para visualziarlo
     return {
         arrayOfNumberRandom: numRandom,
         menor: numMin,
