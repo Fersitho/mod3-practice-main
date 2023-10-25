@@ -13,6 +13,10 @@ function sortStrings(a, b) {
 }
 
 const arrayOfTitles = movies.map((movie) => movie.title);
-const sortedArrayOfTitles = arrayOfTitles.sort(sortStrings);
+// const sortedArrayOfTitles = arrayOfTitles.sort(sortStrings);
+const sortedArrayOfTitles = arrayOfTitles.sort((a, b) =>
+  a.toLowerCase() < b.toLowerCase() ? -1 : (
+    a.toLowerCase() == b.toLowerCase() ? 0 : 1
+  ));
 
 showContent(10, sortedArrayOfTitles);
