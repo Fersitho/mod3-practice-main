@@ -42,9 +42,9 @@ const fibCalc = (num) => {
     } else {
         result = fib[num];
     }
-    
+
     // numOrdinal nos da el numero ordinal en español solo hasta 99 luego pasa el numero normal como string
-    return `El ${numOrdinal(0)} de la serie de Fibonacci es ${result}`;
+    return `El ${numOrdinal(num)} de la serie de Fibonacci es ${result}`;
 
 }
 
