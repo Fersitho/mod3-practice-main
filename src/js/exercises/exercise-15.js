@@ -12,15 +12,6 @@ siendo las mejores aquellas cuya valoración es superior a la valoración media 
 
 */
 
-// let media = (movies.reduce((media,film) => media += film.rating, 0)/movies.length).toFixed(2);
-// let moviesBestDESC = movies.filter(a => a.rating >= media).sort((a,b) => b.rating - a.rating);
-// let moviesBest = moviesBestDESC.map((film) => ({
-//     title: film.title,
-//     description: film.description
-// }));
-
-// showContent(15, moviesBest);
-
 const searchBestFilmTopMedia = (films) => {
 
     let media = (films.reduce((media, film) => media += film.rating, 0) / films.length).toFixed(2);
