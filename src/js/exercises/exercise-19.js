@@ -13,4 +13,27 @@ Ejemplo: "Hello world"
     d: 1,
 }
 Nota: siempre letras minúsculas y sin tildes (para simplificar)
+
+// en el ejercio 17 hice algo parecido para contar cada una y comparar si era u isogramaa
 */
+
+const objetKeys = (texto) => {
+
+    texto = removeAccents(lowerCase(texto));
+    let contadorCaracteres = {};
+
+    for (let i = 0; i < texto.length; i++) {
+        let caracter = texto[i];
+
+        if (contadorCaracteres[caracter] === undefined) {
+            contadorCaracteres[caracter] = 1;
+        } else {
+            contadorCaracteres[caracter]++;
+        }
+    }
+
+    return contadorCaracteres;
+
+}
+
+showContent(19,objetKeys('Hola HOLÁ Caracola'));
