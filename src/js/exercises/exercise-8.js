@@ -13,7 +13,7 @@ const positionOnAlphabetGeneratorArray = (text) => {
     for (let i = 0; i < textReformated.length; i++) {
 
         arrayAlphabet.push(
-            alphabet.indexOf(textReformated.charAt(i))
+            alphabet.indexOf(textReformated.charAt(i)) + 1
         );
         
     }
