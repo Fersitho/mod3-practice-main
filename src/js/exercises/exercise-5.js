@@ -8,5 +8,20 @@ Ejemplos:
 repetitions(‘code’) // result: “COoDddEeee”
 repetitions(‘list’) // result: “LIiSssTttt”
 repetitions(function) // result: “FUuNnnTtttIiiiiOoooooNnnnnnn”
-
 */
+const  repetitions = (text) => {
+    let textResult = ''
+    for (let i = 0; i < text.length; i++) {
+        
+        textResult += text.charAt(i).toUpperCase()
+    
+        for (let j = 0; j < i; j++) {
+            textResult += text.charAt(i).toLowerCase()
+        }  
+
+    }
+    
+    return textResult
+}
+
+showContent(5, repetitions('function'));

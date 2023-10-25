@@ -5,4 +5,21 @@ que ocupa cada carácter en el abecedario. Para que sea más sencillo, elimina l
 (recuerda que puedes utilizar las funciones de ejercicios anteriores).
 */
 
-const alphabet = "abcdefghijklmnopqrstuvwxyz";
+const positionOnAlphabetGeneratorArray = (text) => {
+    const alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let arrayAlphabet = [];
+    let textReformated= removeAccents(lowerCase(text));
+
+    for (let i = 0; i < textReformated.length; i++) {
+
+        arrayAlphabet.push(
+            alphabet.indexOf(textReformated.charAt(i))
+        );
+        
+    }
+
+    return arrayAlphabet;
+ 
+}
+
+showContent(8, positionOnAlphabetGeneratorArray('Dábale arroz a la zorra el abad'));
